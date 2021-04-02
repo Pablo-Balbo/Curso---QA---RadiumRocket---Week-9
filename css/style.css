@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #eee;
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid #000000;
+}
+
+#form {
+    display: block;
+    justify-content: center;
+    padding: 40px;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+li {
+    list-style: none;
+}
+
+label,
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.input {
+    /* como alinear los inputs uno debajo del otro? */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn,
+#btn_login_register {
+    background: #fff;
+    padding: 10px;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border-color: #000000;
+}
+
+#btn:hover,
+#btn_login_register:hover {
+    font-size: 18px;
+    background: #49b5b5;
+    color: #eee;
+}
+
+#btn2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
