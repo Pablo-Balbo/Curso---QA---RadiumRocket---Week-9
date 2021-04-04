@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,42 +13,41 @@
         <form action="" id="form">
             <ul>
                 <li>
-                    <label for="fname" class="label">first name</label>
-                    <input type="text" name="fname" class="input" required>
-                </li>
-
-                <li>
-                    <label for="lname" class="label">last name</label>
-                    <input type="text" name="lname" class="input" required>
-                </li>
-
-                <li>
                     <label for="email" class="label">email</label>
-                    <input type="email" name="email" class="input" required>
+                    <input type="email" class="input" id="email" required>
+                </li>
+
+                <li>
+                    <label for="fname" class="label">full name</label>
+                    <input type="text" class="input" id="fname" required>
                 </li>
 
                 <li>
                     <label for="pass" class="label">password</label>
-                    <input type="password" name="pass" class="input" required>
+                    <input type="password" class="input" id="pass" required>
                 </li>
 
                 <li>
-                    <label for="rpt_pass" class="label">repeat password</label>
-                    <input type="password" name="rpt_pass" class="input" required>
+                    <label for="rptPass" class="label">confirm password</label>
+                    <input type="password" class="input" id="rptPass" required>
                 </li>
 
                 <div class="buttons">
-                    <button type="submit" id="btn">enviar</button>
-                    <button type="reset" id="btn">reset form</button>
+                    <button type="reset" id="reset">reset</button>
+                    <button type="submit" id="submit">register</button>
                 </div>
             </ul>
 
-            <div id="btn2">
-                <button id="btn_login_register">
-                    <a href="login.html">back to log in</a>
+            <div class="btn2">
+                <button id="btn2">
+                    <a href="login.html">Log in</a>
                 </button>
             </div>
         </form>
     </div>
+
+    <div id="error"></div>
+
+    <script src="js/register.js"></script>
 </body>
 </html>

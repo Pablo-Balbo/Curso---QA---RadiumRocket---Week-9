@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,26 +14,29 @@
             <ul>
                 <li>
                     <label for="email">email</label>
-                    <input type="email" name="" class="input" required>
+                    <input type="email" name="email" class="input" id="email" required>
                 </li>
-
+                
                 <li>
-                    <label for="password">password</label>
-                    <input type="password" name="password" class="input" required>
+                    <label for="pass">password</label>
+                    <input type="password" class="input" id="pass" required>
                 </li>
-
+                
                 <div class="buttons">
-                    <button type="submit" id="btn">log in</button>
-                </div>
-                    
+                    <button type="submit" id="submit">log in</button>
+                </div>   
             </ul>
-
-            <div id="btn2">
-                <button id="btn_login_register">
-                    <a href="register.html"> back to register</a>
+            
+            <div class="btn2">
+                <button id="btn2">
+                    <a href="register.html">Don´t have an account?</a>
                 </button>
             </div>
         </form>
     </div>
+    
+    <div id="error"></div>
+    
+    <script src="js/login.js"></script>
 </body>
 </html>

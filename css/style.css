@@ -1,22 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     background: #eee;
     width: 500px;
-    margin: auto;
-    margin-top: 80px;
+    margin: 80px auto;
     border: 1px solid #000000;
 }
 
 #form {
-    display: block;
-    justify-content: center;
-    padding: 40px;
+    padding: 20px 20px;
     color: #000000;
-    font-family: sans-serif;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
     font-size: 18px;
     text-transform: capitalize;
 }
@@ -32,37 +24,42 @@ input {
 }
 
 .input {
-    /* como alinear los inputs uno debajo del otro? */
+    border-radius: 1px;
+    /* how can I align the input elements one under the other? */
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
 }
 
-#btn,
-#btn_login_register {
-    background: #fff;
-    padding: 10px;
-    font-size: 17px;
-    text-transform: capitalize;
-    border-radius: 5px;
-    border-color: #000000;
-}
-
-#btn:hover,
-#btn_login_register:hover {
-    font-size: 18px;
-    background: #49b5b5;
-    color: #eee;
-}
-
+#submit,
+#reset,
 #btn2 {
+    padding: 10px;
+    border-radius: 3px;
+    font-family: Georgia, Times, serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+#submit:hover,
+#reset:hover,
+#btn2:hover {
+    padding: 13px;
+    background: #ffffff;
+}
+
+.btn2 {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
 }
 
 a {
     text-decoration: none;
+}
+
+#error {
+    color: red;
 }
