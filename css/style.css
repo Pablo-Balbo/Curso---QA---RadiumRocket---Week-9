@@ -3,29 +3,31 @@
     width: 500px;
     margin: 80px auto;
     border: 1px solid #000000;
+    border-radius: 8px;
 }
 
 #form {
-    padding: 20px 20px;
+    padding: 20px;
     color: #000000;
     font-family: Georgia, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
 }
 
 li {
     list-style: none;
+    display: flex;
+    flex-direction: column ;
 }
 
 label,
 input {
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
 }
 
 .input {
-    border-radius: 1px;
-    /* how can I align the input elements one under the other? */
+    border-radius: 5px;
 }
 
 .buttons {
@@ -35,20 +37,18 @@ input {
 }
 
 #submit,
-#reset,
-#btn2 {
+#reset {
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     font-family: Georgia, Times, serif;
     font-size: 15px;
     text-transform: capitalize;
 }
 
 #submit:hover,
-#reset:hover,
-#btn2:hover {
-    padding: 13px;
-    background: #ffffff;
+#reset:hover {
+    padding: 12px;
+    background: rgb(208, 208, 208);
 }
 
 .btn2 {
@@ -58,6 +58,19 @@ input {
 
 a {
     text-decoration: none;
+}
+
+#btn2 {
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Georgia, Times, serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+#btn2:hover {
+    padding: 3px;
+    background: rgb(208, 208, 208);
 }
 
 #error {
