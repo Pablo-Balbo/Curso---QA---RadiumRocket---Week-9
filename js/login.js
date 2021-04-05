@@ -1,6 +1,5 @@
 testForm(2, 'log in');
 
-
 //TODO: The following functions should be imported from "testFunctions.js" and instead of being defined here, but i don´t know how to do it.
 function testForm(expectedInputs, expectedButtonText) {
 
