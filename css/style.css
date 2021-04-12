@@ -75,4 +75,11 @@ a {
 
 #error {
     color: red;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+div.span {
+    color: red;
 }
