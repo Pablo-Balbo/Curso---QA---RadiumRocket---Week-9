@@ -13,23 +13,27 @@
         <form action="" id="form">
             <ul>
                 <li>
+                    <label for="fullName" class="label">full name</label>
+                    <input type="text" class="input" id="fullName" name="Full Name" required>
+                    <div class="span" id="spanFullName"></div>
+                </li>
+
+                <li>
                     <label for="email" class="label">email</label>
-                    <input type="email" class="input" id="email" required>
+                    <input type="email" class="input" id="email" name="Email" required>
+                    <div class="span" id="spanEmail"></div>
                 </li>
 
                 <li>
-                    <label for="fname" class="label">full name</label>
-                    <input type="text" class="input" id="fname" required>
+                    <label for="password" class="label">password</label>
+                    <input type="password" class="input" id="password" name="Password" required>
+                    <div class="span" id="spanPassword"></div>
                 </li>
 
                 <li>
-                    <label for="pass" class="label">password</label>
-                    <input type="password" class="input" id="pass" required>
-                </li>
-
-                <li>
-                    <label for="rptPass" class="label">confirm password</label>
-                    <input type="password" class="input" id="rptPass" required>
+                    <label for="confirmPassword" class="label">confirm password</label>
+                    <input type="password" class="input" id="confirmPassword" name="Confirm Password" required>
+                    <div class="span" id="spanConfirmPassword"></div>
                 </li>
 
                 <div class="buttons">
@@ -44,10 +48,10 @@
                 </button>
             </div>
         </form>
+        <div id="error"></div>
     </div>
 
-    <div id="error"></div>
-
     <script src="js/register.js"></script>
+    <script src="js/registerValidations.js"></script>
 </body>
 </html>

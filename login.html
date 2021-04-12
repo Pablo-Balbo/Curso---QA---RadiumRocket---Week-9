@@ -15,11 +15,13 @@
                 <li>
                     <label for="email">email</label>
                     <input type="email" name="email" class="input" id="email" required>
+                    <div class="span" id="spanEmail"></div>
                 </li>
                 
                 <li>
-                    <label for="pass">password</label>
-                    <input type="password" class="input" id="pass" required>
+                    <label for="password">password</label>
+                    <input type="password" class="input" id="password" required>
+                    <div class="span" id="spanPassword"></div>
                 </li>
                 
                 <div class="buttons">
@@ -33,10 +35,10 @@
                 </button>
             </div>
         </form>
+        <div id="error"></div>
     </div>
     
-    <div id="error"></div>
-    
     <script src="js/login.js"></script>
+    <script src="js/loginValidations.js"></script>
 </body>
 </html>
