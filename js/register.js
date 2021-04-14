@@ -38,7 +38,7 @@ function testForm(expectedInputs, expectedButtonText) {
     if (errorResults.length != 0) {
         fullMessage = 'Validation results:</br>' + errorResults.join('</br>');
     } else {
-        fullMessage = 'Validation results:</br> Every validation has passed.';
+        fullMessage = 'Validation results:</br> Every validation has passed.</br>';
     }
 
     error.innerHTML = fullMessage;
