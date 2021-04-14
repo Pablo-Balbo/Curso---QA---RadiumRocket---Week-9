@@ -100,7 +100,10 @@ var handleSubmit = function(e){
     e.preventDefault();
     var inputs = form.querySelectorAll('input');
     inputs.forEach(function(input){
-        error.innerHTML = input.name + ': ' + input.value;
+        error.innerHTML += input.name + ': ' + input.value + '</br>';
     });
+    fetch(`https://jsonplaceholder.typicode.com/users?email=${email.value}`)
+    .then (response => response.json())
+    .then (info => console.log(info));
 };
 form.addEventListener('submit', handleSubmit);

@@ -1,5 +1,9 @@
 var email = document.getElementById('email'),
-    password = document.getElementById('password');    
+    password = document.getElementById('password');   
+    form = document.querySelector('form'),
+    error = document.getElementById('error'); 
+
+// email.onblur - focus
 
 email.onblur = function(e){
     var emailConditions = new RegExp("^([\dA-Za-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$");
@@ -17,6 +21,8 @@ email.addEventListener('focus', function(e){
         spanEmail.style.display = 'none';
     }
 });
+
+// password.onblur - focus
 
 password.onblur = function(e){
     var passwordValue = password.value;
@@ -39,3 +45,17 @@ password.addEventListener('focus', function(e){
         spanPassword.style.display = 'none';
     }
 });
+
+// Submit function
+
+var handleSubmit = function(e){
+    e.preventDefault();
+    var inputs = form.querySelectorAll('input');
+    inputs.forEach(function(input){
+        error.innerHTML += input.name + ': ' + input.value + '</br>';
+    });
+    fetch(`https://jsonplaceholder.typicode.com/users?email=${email.value}`)
+    .then (response => response.json())
+    .then (info => console.log(info));
+};
+form.addEventListener('submit', handleSubmit);
