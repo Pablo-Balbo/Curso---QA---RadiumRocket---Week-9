@@ -1,4 +1,4 @@
-function testForm(expectedInputs, expectedButtonText) {
+export function testForm(expectedInputs, expectedButtonText) {
 
     var error = document.getElementById('error');
     var errorResults = [];
@@ -39,7 +39,7 @@ function testForm(expectedInputs, expectedButtonText) {
     error.innerHTML = fullMessage;
 };
 
-function testCheckForm() {
+export function testCheckForm() {
     var form = document.getElementsByTagName('form');
 
     if (form.length == 0) {
@@ -48,7 +48,7 @@ function testCheckForm() {
     }
 };
 
-function testInputsLength(expectedTotal) {
+export function testInputsLength(expectedTotal) {
     var inputs = document.getElementsByTagName('input');
 
     if (inputs.length != expectedTotal) {
@@ -57,7 +57,7 @@ function testInputsLength(expectedTotal) {
     }
 };
 
-function testCheckInputsWithLabels() {
+export function testCheckInputsWithLabels() {
     var inputs = document.getElementsByTagName('input');
     var labels = document.getElementsByTagName('label');
     var count = 0;
@@ -85,7 +85,7 @@ function testCheckInputsWithLabels() {
     }
 };
 
-function testCheckRequiredFields(){
+export function testCheckRequiredFields(){
     var inputs = document.getElementsByTagName('input');
 
     for (var i = 0; i < inputs.length; i++) {
@@ -96,7 +96,7 @@ function testCheckRequiredFields(){
     }
 };
 
-function testCheckButtonContent(expectedContent){
+export function testCheckButtonContent(expectedContent){
     var buttonSubmit = document.getElementsByTagName('button').submit;
 
     if (buttonSubmit === undefined) {

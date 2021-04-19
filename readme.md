@@ -1,4 +1,4 @@
-Week 9:
+<!-- Week 9:
 This week on the QA course we view validation functions in .js files.
 This repository have two .html files related named "register.html" and "login.html", each one with that share the same .css file for styles.
 There's also two .js files, each corresponding and related to it's .html file.
@@ -15,3 +15,4 @@ TODO:
 Export functions from testFunctions.js;
 Import helper functions in register.js and login.js;
 The submit event sends the data entered to a div below the form, but when this button is pressed again, the data is entered again, accumulating to the previous ones instead of replacing them.
+I add a "<br/>" tag to add a newline. '\n' did not work on the code. IS THAT RIGHT? -->

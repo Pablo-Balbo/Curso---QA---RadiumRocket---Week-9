@@ -1,8 +1,5 @@
 testForm(2, 'log in');
 
-//TODO: The following functions should be imported from "testFunctions.js" and instead of being defined here, but i don´t know how to do it.
-// TODO: On line 38 and 40 i add a "<br/>" tag to add a newline. '\n' did not work on the code. IS THAT RIGHT?
-
 function testForm(expectedInputs, expectedButtonText) {
 
     var error = document.getElementById('error');
