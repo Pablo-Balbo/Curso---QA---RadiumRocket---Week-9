@@ -4,8 +4,8 @@ const email = document.getElementById('email'),
       submitForm = document.getElementById('form'),
       error = document.getElementById('error');
 
-let flagEmail = false,
-    flagPassword = false;
+let flagEmail = true,
+    flagPassword = true;
 
 email.onblur = function(e){
     const emailConditions = new RegExp("^([\dA-Za-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$");
@@ -48,6 +48,7 @@ password.focus = function(e){
 
 submitForm.onsubmit = function(e){
     if (flagEmail && flagPassword){
+        e.preventDefault(e);
         const inputs = form.querySelectorAll('input');
         error.innerHTML = '';
         inputs.forEach(function(input){
